@@ -4,7 +4,15 @@ nb = nbf.v4.new_notebook()
 
 cells = []
 
-cells.append(nbf.v4.new_markdown_cell("# MedGemma High Fidelity Clinical Triage\n\nThis notebook demonstrates the multi-agent clinical triage pipeline built on Google MedGemma 1.5."))
+import os
+
+# Read the full writeup content to embed in the notebook
+writeup_content = "# MedGemma High Fidelity Clinical Triage"
+if os.path.exists("KAGGLE_WRITEUP.md"):
+    with open("KAGGLE_WRITEUP.md", "r", encoding="utf-8") as f:
+        writeup_content = f.read()
+
+cells.append(nbf.v4.new_markdown_cell(writeup_content))
 
 cells.append(nbf.v4.new_code_cell(
 """# Clone the submission repo (explicitly main branch)
