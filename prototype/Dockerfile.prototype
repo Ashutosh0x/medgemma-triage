@@ -1,0 +1,51 @@
+# Prototype Dockerfile
+# MedGemma CXR Triage Assistant
+# ==============================
+
+FROM nvidia/cuda:11.8-devel-ubuntu22.04
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    python3.10 \
+    python3.10-dev \
+    python3-pip \
+    git \
+    wget \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set Python 3.10 as default
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1 && \
+    update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
+
+# Create working directory
+WORKDIR /workspace
+
+# Copy requirements first for caching
+COPY requirements.txt .
+
+# Install Python dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Copy prototype code
+COPY . .
+
+# Create data directories
+RUN mkdir -p data/raw data/processed data/samples
+
+# Default command: start Jupyter
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''"]
+
+# Expose Jupyter port
+EXPOSE 8888
+
+# Labels
+LABEL maintainer="Ashutosh Kumar Singh"
+LABEL description="MedGemma CXR Triage Assistant - Prototype Environment"
+LABEL version="1.0"

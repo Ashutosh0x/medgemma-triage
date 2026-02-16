@@ -1,0 +1,189 @@
+[{"stream_name":"stderr","time":16.259664913,"data":"2026-01-14 21:52:32.704218: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n"}
+,{"stream_name":"stderr","time":16.439468046000002,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":16.439499821,"data":"E0000 00:00:1768427552.884006       7 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n"}
+,{"stream_name":"stderr","time":16.492198816,"data":"E0000 00:00:1768427552.936782       7 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n"}
+,{"stream_name":"stderr","time":16.970504655,"data":"W0000 00:00:1768427553.415090       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stderr","time":16.970533415,"data":"W0000 00:00:1768427553.415134       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stderr","time":16.970546824,"data":"W0000 00:00:1768427553.415140       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stderr","time":16.970551328,"data":"W0000 00:00:1768427553.415144       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stdout","time":34.895371589,"data":"[2026-01-14 21:52:51.339903] Starting MedGemma Kaggle Inference Job (V8)...\n"}
+,{"stream_name":"stdout","time":34.948187421,"data":"Strategy A: Scanning /kaggle/input for config.json...\n"}
+,{"stream_name":"stdout","time":34.948212603,"data":"Mount structure:\n"}
+,{"stream_name":"stdout","time":34.94821798,"data":"input/\n"}
+,{"stream_name":"stdout","time":34.959886517,"data":"    medgemma-model-unzipped/\n"}
+,{"stream_name":"stdout","time":34.959903989,"data":"        model.safetensors.index.json\n"}
+,{"stream_name":"stdout","time":34.959909647,"data":"        config.json\n"}
+,{"stream_name":"stdout","time":34.959912152,"data":"        model-00001-of-00002.safetensors\n"}
+,{"stream_name":"stdout","time":34.959914975,"data":"        model-00002-of-00002.safetensors\n"}
+,{"stream_name":"stdout","time":34.959917376,"data":"        preprocessor_config.json\n"}
+,{"stream_name":"stdout","time":34.964435701,"data":"    chest-xray-pneumonia/\n"}
+,{"stream_name":"stdout","time":34.970186951,"data":"        chest_xray/\n"}
+,{"stream_name":"stdout","time":34.978321263,"data":"            chest_xray/\n"}
+,{"stream_name":"stdout","time":34.986141914,"data":"                val/\n"}
+,{"stream_name":"stdout","time":34.997485381,"data":"                    PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":35.005827235,"data":"                    NORMAL/\n"}
+,{"stream_name":"stdout","time":35.011811383,"data":"                test/\n"}
+,{"stream_name":"stdout","time":36.280652295,"data":"                    PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":36.982567333,"data":"                    NORMAL/\n"}
+,{"stream_name":"stdout","time":36.98831163,"data":"                train/\n"}
+,{"stream_name":"stdout","time":43.518848551,"data":"                    PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":45.848453318,"data":"                    NORMAL/\n"}
+,{"stream_name":"stdout","time":45.853697214,"data":"            __MACOSX/\n"}
+,{"stream_name":"stdout","time":45.859817176,"data":"                chest_xray/\n"}
+,{"stream_name":"stdout","time":45.86538903,"data":"                    val/\n"}
+,{"stream_name":"stdout","time":45.871363622,"data":"                        PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":45.880535674,"data":"                        NORMAL/\n"}
+,{"stream_name":"stdout","time":45.889540826,"data":"                    test/\n"}
+,{"stream_name":"stdout","time":47.056160751,"data":"                        PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":47.718720328,"data":"                        NORMAL/\n"}
+,{"stream_name":"stdout","time":47.724137156,"data":"                    train/\n"}
+,{"stream_name":"stdout","time":54.253881914,"data":"                        PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":56.648901305,"data":"                        NORMAL/\n"}
+,{"stream_name":"stdout","time":56.653788782,"data":"            val/\n"}
+,{"stream_name":"stdout","time":56.659722413,"data":"                PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":56.665485121,"data":"                NORMAL/\n"}
+,{"stream_name":"stdout","time":56.66956704,"data":"            test/\n"}
+,{"stream_name":"stdout","time":57.768814006,"data":"                PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":58.439006923,"data":"                NORMAL/\n"}
+,{"stream_name":"stdout","time":58.443539855,"data":"            train/\n"}
+,{"stream_name":"stdout","time":64.584279137,"data":"                PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":66.939186984,"data":"                NORMAL/\n"}
+,{"stream_name":"stdout","time":66.940671665,"data":"âœ“ Found MedGemma config at: /kaggle/input/medgemma-model-unzipped/config.json\n"}
+,{"stream_name":"stdout","time":66.940808229,"data":"Loading from /kaggle/input/medgemma-model-unzipped...\n"}
+,{"stream_name":"stderr","time":66.973548611,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":72.419712329,"data":"`torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":149.533585011,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:44\u003c00:44, 44.63s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [01:16\u003c00:00, 37.23s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [01:16\u003c00:00, 38.34s/it]\n"}
+,{"stream_name":"stdout","time":149.561066076,"data":"âœ“ MedGemma loaded successfully on GPU.\n"}
+,{"stream_name":"stdout","time":149.561097902,"data":"âœ“ MedGemma loaded successfully on GPU.\n"}
+,{"stream_name":"stdout","time":149.616280844,"data":"Targeting image_token: '\u003cimage_soft_token\u003e'\n"}
+,{"stream_name":"stdout","time":149.61632095,"data":"Checking main_tokenizer...\n"}
+,{"stream_name":"stdout","time":149.617049581,"data":"  - '\u003cimage_soft_token\u003e' encodes to: [262144]\n"}
+,{"stream_name":"stdout","time":149.617071197,"data":"Checking processor.tokenizer...\n"}
+,{"stream_name":"stdout","time":149.617138334,"data":"  - '\u003cimage_soft_token\u003e' encodes to: [262144]\n"}
+,{"stream_name":"stdout","time":149.736082528,"data":"Using Standard Prompt: \u003cimage_soft_token\u003e\n"}
+,{"stream_name":"stdout","time":149.736140931,"data":"Describe the visible radiographic findings in this chest X-ray. Use anatomical terms and express uncertainty where appropriate.\n"}
+,{"stream_name":"stdout","time":149.73614849,"data":"Tokenizing inputs...\n"}
+,{"stream_name":"stdout","time":149.777451809,"data":"Standard Processor call failed: Prompt contained 0 image tokens but received 1 images.\n"}
+,{"stream_name":"stdout","time":149.777498548,"data":"Initiating NUCLEAR OPTION (Manual Construction)...\n"}
+,{"stream_name":"stdout","time":149.777505051,"data":"Applying chat template (tokenize=True)...\n"}
+,{"stream_name":"stdout","time":149.789725298,"data":"DEBUG: Input IDs Shape: torch.Size([1, 287])\n"}
+,{"stream_name":"stdout","time":149.789767978,"data":"DEBUG: First 10 IDs: [2, 105, 2364, 107, 262144, 262144, 262144, 262144, 262144, 262144]\n"}
+,{"stream_name":"stdout","time":149.789773669,"data":"DEBUG: Last 10 IDs: [3821, 19262, 1298, 6780, 236761, 106, 107, 105, 4368, 107]\n"}
+,{"stream_name":"stdout","time":149.790115772,"data":"Forcing Prefix: 'The chest X-ray shows' (IDs: [[818, 15350, 1684, 236772, 1254, 3831]])\n"}
+,{"stream_name":"stdout","time":149.792600788,"data":"Using image processor: \u003cclass 'transformers.models.gemma3.image_processing_gemma3.Gemma3ImageProcessor'\u003e\n"}
+,{"stream_name":"stdout","time":149.828471692,"data":"Manual inputs keys before sanitization: ['pixel_values', 'num_crops', 'input_ids', 'attention_mask']\n"}
+,{"stream_name":"stdout","time":149.828515712,"data":"Keys after sanitization: ['pixel_values', 'input_ids', 'attention_mask']\n"}
+,{"stream_name":"stdout","time":149.828523155,"data":"Manual construction successful.\n"}
+,{"stream_name":"stdout","time":149.830836767,"data":"Running inference...\n"}
+,{"stream_name":"stdout","time":185.504868053,"data":"\n"}
+,{"stream_name":"stdout","time":185.504928104,"data":"--- MEDGEMMA FINDINGS ---\n"}
+,{"stream_name":"stdout","time":185.50493597,"data":"\n"}
+,{"stream_name":"stdout","time":185.504941457,"data":"user\n"}
+,{"stream_name":"stdout","time":185.504946646,"data":"\n"}
+,{"stream_name":"stdout","time":185.504951939,"data":"Describe the visible radiographic findings in this chest X-ray. Use anatomical terms and express uncertainty where appropriate.\n"}
+,{"stream_name":"stdout","time":185.504957619,"data":"model\n"}
+,{"stream_name":"stdout","time":185.504962036,"data":"The chest X-ray shows\n"}
+,{"stream_name":"stdout","time":185.504966505,"data":"\n"}
+,{"stream_name":"stdout","time":185.504970952,"data":"-----------------------\n"}
+,{"stream_name":"stdout","time":185.504975459,"data":"\n"}
+,{"stream_name":"stdout","time":185.504981497,"data":"--- TRIAGE DECISION ---\n"}
+,{"stream_name":"stdout","time":185.504984771,"data":"{\n"}
+,{"stream_name":"stdout","time":185.504987815,"data":"  \"triage\": \"NON-URGENT\",\n"}
+,{"stream_name":"stdout","time":185.504991489,"data":"  \"trigger_findings\": [],\n"}
+,{"stream_name":"stdout","time":185.50499565,"data":"  \"logic\": \"Keyword detection in MedGemma output\"\n"}
+,{"stream_name":"stdout","time":185.504998945,"data":"}\n"}
+,{"stream_name":"stdout","time":185.505180769,"data":"Results saved to /kaggle/working/medgemma_results.json\n"}
+,{"stream_name":"stdout","time":185.691969778,"data":"[2026-01-14 21:55:22.136429] Starting MedGemma Kaggle Inference Job (V8)...\n"}
+,{"stream_name":"stdout","time":185.692035807,"data":"Strategy A: Scanning /kaggle/input for config.json...\n"}
+,{"stream_name":"stdout","time":185.692045152,"data":"Mount structure:\n"}
+,{"stream_name":"stdout","time":185.692928654,"data":"input/\n"}
+,{"stream_name":"stdout","time":185.696816551,"data":"    medgemma-model-unzipped/\n"}
+,{"stream_name":"stdout","time":185.696850856,"data":"        model.safetensors.index.json\n"}
+,{"stream_name":"stdout","time":185.696857626,"data":"        config.json\n"}
+,{"stream_name":"stdout","time":185.696861073,"data":"        model-00001-of-00002.safetensors\n"}
+,{"stream_name":"stdout","time":185.696864967,"data":"        model-00002-of-00002.safetensors\n"}
+,{"stream_name":"stdout","time":185.696868875,"data":"        preprocessor_config.json\n"}
+,{"stream_name":"stdout","time":185.698787428,"data":"    chest-xray-pneumonia/\n"}
+,{"stream_name":"stdout","time":185.701236699,"data":"        chest_xray/\n"}
+,{"stream_name":"stdout","time":185.707632601,"data":"            chest_xray/\n"}
+,{"stream_name":"stdout","time":185.712766977,"data":"                val/\n"}
+,{"stream_name":"stdout","time":185.716236007,"data":"                    PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":185.717677718,"data":"                    NORMAL/\n"}
+,{"stream_name":"stdout","time":185.719113444,"data":"                test/\n"}
+,{"stream_name":"stdout","time":186.097288477,"data":"                    PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":186.330520846,"data":"                    NORMAL/\n"}
+,{"stream_name":"stdout","time":186.33155216,"data":"                train/\n"}
+,{"stream_name":"stdout","time":188.526644082,"data":"                    PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":189.208978988,"data":"                    NORMAL/\n"}
+,{"stream_name":"stdout","time":189.210074096,"data":"            __MACOSX/\n"}
+,{"stream_name":"stdout","time":189.212055272,"data":"                chest_xray/\n"}
+,{"stream_name":"stdout","time":189.216590355,"data":"                    val/\n"}
+,{"stream_name":"stdout","time":189.219670144,"data":"                        PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":189.220695985,"data":"                        NORMAL/\n"}
+,{"stream_name":"stdout","time":189.221669767,"data":"                    test/\n"}
+,{"stream_name":"stdout","time":189.610448745,"data":"                        PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":189.831077744,"data":"                        NORMAL/\n"}
+,{"stream_name":"stdout","time":189.832127472,"data":"                    train/\n"}
+,{"stream_name":"stdout","time":192.015679084,"data":"                        PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":192.690454655,"data":"                        NORMAL/\n"}
+,{"stream_name":"stdout","time":192.692725586,"data":"            val/\n"}
+,{"stream_name":"stdout","time":192.695718088,"data":"                PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":192.696833991,"data":"                NORMAL/\n"}
+,{"stream_name":"stdout","time":192.697860675,"data":"            test/\n"}
+,{"stream_name":"stdout","time":193.084944015,"data":"                PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":193.313216715,"data":"                NORMAL/\n"}
+,{"stream_name":"stdout","time":193.314186747,"data":"            train/\n"}
+,{"stream_name":"stdout","time":195.400292283,"data":"                PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":196.069500804,"data":"                NORMAL/\n"}
+,{"stream_name":"stdout","time":196.070848292,"data":"âœ“ Found MedGemma config at: /kaggle/input/medgemma-model-unzipped/config.json\n"}
+,{"stream_name":"stdout","time":196.070897107,"data":"Loading from /kaggle/input/medgemma-model-unzipped...\n"}
+,{"stream_name":"stderr","time":204.806179829,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:01\u003c00:01,  1.94s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:03\u003c00:00,  1.54s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:03\u003c00:00,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":204.828609292,"data":"âœ“ MedGemma loaded successfully on GPU.\n"}
+,{"stream_name":"stdout","time":204.828638004,"data":"âœ“ MedGemma loaded successfully on GPU.\n"}
+,{"stream_name":"stdout","time":204.837421366,"data":"Targeting image_token: '\u003cimage_soft_token\u003e'\n"}
+,{"stream_name":"stdout","time":204.83744321,"data":"Checking main_tokenizer...\n"}
+,{"stream_name":"stdout","time":204.837592486,"data":"  - '\u003cimage_soft_token\u003e' encodes to: [262144]\n"}
+,{"stream_name":"stdout","time":204.837608744,"data":"Checking processor.tokenizer...\n"}
+,{"stream_name":"stdout","time":204.837676316,"data":"  - '\u003cimage_soft_token\u003e' encodes to: [262144]\n"}
+,{"stream_name":"stdout","time":204.961191427,"data":"Using Standard Prompt: \u003cimage_soft_token\u003e\n"}
+,{"stream_name":"stdout","time":204.961232975,"data":"Describe the visible radiographic findings in this chest X-ray. Use anatomical terms and express uncertainty where appropriate.\n"}
+,{"stream_name":"stdout","time":204.9612395,"data":"Tokenizing inputs...\n"}
+,{"stream_name":"stdout","time":204.997324007,"data":"Standard Processor call failed: Prompt contained 0 image tokens but received 1 images.\n"}
+,{"stream_name":"stdout","time":204.997363266,"data":"Initiating NUCLEAR OPTION (Manual Construction)...\n"}
+,{"stream_name":"stdout","time":204.997369524,"data":"Applying chat template (tokenize=True)...\n"}
+,{"stream_name":"stdout","time":204.99940925,"data":"DEBUG: Input IDs Shape: torch.Size([1, 287])\n"}
+,{"stream_name":"stdout","time":204.999465913,"data":"DEBUG: First 10 IDs: [2, 105, 2364, 107, 262144, 262144, 262144, 262144, 262144, 262144]\n"}
+,{"stream_name":"stdout","time":204.999500296,"data":"DEBUG: Last 10 IDs: [3821, 19262, 1298, 6780, 236761, 106, 107, 105, 4368, 107]\n"}
+,{"stream_name":"stdout","time":204.999873319,"data":"Forcing Prefix: 'The chest X-ray shows' (IDs: [[818, 15350, 1684, 236772, 1254, 3831]])\n"}
+,{"stream_name":"stdout","time":204.999986261,"data":"Using image processor: \u003cclass 'transformers.models.gemma3.image_processing_gemma3.Gemma3ImageProcessor'\u003e\n"}
+,{"stream_name":"stdout","time":205.035341243,"data":"Manual inputs keys before sanitization: ['pixel_values', 'num_crops', 'input_ids', 'attention_mask']\n"}
+,{"stream_name":"stdout","time":205.035391726,"data":"Keys after sanitization: ['pixel_values', 'input_ids', 'attention_mask']\n"}
+,{"stream_name":"stdout","time":205.035399153,"data":"Manual construction successful.\n"}
+,{"stream_name":"stdout","time":205.037687175,"data":"Running inference...\n"}
+,{"stream_name":"stdout","time":239.341902195,"data":"\n"}
+,{"stream_name":"stdout","time":239.341939369,"data":"--- MEDGEMMA FINDINGS ---\n"}
+,{"stream_name":"stdout","time":239.341943901,"data":"\n"}
+,{"stream_name":"stdout","time":239.341947109,"data":"user\n"}
+,{"stream_name":"stdout","time":239.341950302,"data":"\n"}
+,{"stream_name":"stdout","time":239.341953452,"data":"Describe the visible radiographic findings in this chest X-ray. Use anatomical terms and express uncertainty where appropriate.\n"}
+,{"stream_name":"stdout","time":239.341957172,"data":"model\n"}
+,{"stream_name":"stdout","time":239.341961894,"data":"The chest X-ray shows\n"}
+,{"stream_name":"stdout","time":239.341966512,"data":"\n"}
+,{"stream_name":"stdout","time":239.341971619,"data":"-----------------------\n"}
+,{"stream_name":"stdout","time":239.341976617,"data":"\n"}
+,{"stream_name":"stdout","time":239.342000682,"data":"--- TRIAGE DECISION ---\n"}
+,{"stream_name":"stdout","time":239.342004591,"data":"{\n"}
+,{"stream_name":"stdout","time":239.342007803,"data":"  \"triage\": \"NON-URGENT\",\n"}
+,{"stream_name":"stdout","time":239.342011364,"data":"  \"trigger_findings\": [],\n"}
+,{"stream_name":"stdout","time":239.342014882,"data":"  \"logic\": \"Keyword detection in MedGemma output\"\n"}
+,{"stream_name":"stdout","time":239.342018567,"data":"}\n"}
+,{"stream_name":"stdout","time":239.342246744,"data":"Results saved to /kaggle/working/medgemma_results.json\n"}
+,{"stream_name":"stderr","time":244.367035233,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":244.367082616,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":244.597665458,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":244.59770333,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":245.251217663,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":245.251255481,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":245.288210301,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":246.119219938,"data":"[NbConvertApp] Writing 322371 bytes to __results__.html\n"}
+]

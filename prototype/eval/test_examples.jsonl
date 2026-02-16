@@ -1,0 +1,5 @@
+{"id": "test_001", "image_path": "data/samples/sample_cxr_1.png", "urgency": "non-urgent", "primary_finding": "No Finding"}
+{"id": "test_002", "image_path": "data/samples/sample_cxr_2.png", "urgency": "urgent", "primary_finding": "Pneumonia"}
+{"id": "test_003", "image_path": "data/samples/sample_cxr_3.png", "urgency": "non-urgent", "primary_finding": "No Finding"}
+{"id": "test_004", "image_path": "data/samples/sample_cxr_4.png", "urgency": "urgent", "primary_finding": "Cardiomegaly"}
+{"id": "test_005", "image_path": "data/samples/sample_cxr_5.png", "urgency": "non-urgent", "primary_finding": "Support Devices"}

@@ -1,0 +1,56 @@
+[{"stream_name":"stderr","time":16.105768541,"data":"2026-01-14 15:42:46.436792: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n"}
+,{"stream_name":"stderr","time":16.280501874,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":16.280551184,"data":"E0000 00:00:1768405366.611590       7 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n"}
+,{"stream_name":"stderr","time":16.332019325,"data":"E0000 00:00:1768405366.663110       7 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n"}
+,{"stream_name":"stderr","time":16.75803064,"data":"W0000 00:00:1768405367.089105       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stderr","time":16.758065044,"data":"W0000 00:00:1768405367.089151       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stderr","time":16.758070034,"data":"W0000 00:00:1768405367.089156       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stderr","time":16.758074272,"data":"W0000 00:00:1768405367.089160       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stdout","time":34.667279344,"data":"[2026-01-14 15:43:04.998353] Starting MedGemma Kaggle Inference Job (V8)...\n"}
+,{"stream_name":"stdout","time":34.719480869,"data":"Strategy A: Scanning /kaggle/input for config.json...\n"}
+,{"stream_name":"stdout","time":34.71950939,"data":"Mount structure:\n"}
+,{"stream_name":"stdout","time":34.719515813,"data":"input/\n"}
+,{"stream_name":"stdout","time":34.724206256,"data":"    chest-xray-pneumonia/\n"}
+,{"stream_name":"stdout","time":34.727809943,"data":"        chest_xray/\n"}
+,{"stream_name":"stdout","time":34.737726542,"data":"            chest_xray/\n"}
+,{"stream_name":"stdout","time":34.745216522,"data":"                val/\n"}
+,{"stream_name":"stdout","time":34.754205761,"data":"                    PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":34.763193836,"data":"                    NORMAL/\n"}
+,{"stream_name":"stdout","time":34.805857293,"data":"                test/\n"}
+,{"stream_name":"stdout","time":36.252748601,"data":"                    PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":37.066164555,"data":"                    NORMAL/\n"}
+,{"stream_name":"stdout","time":37.07265132,"data":"                train/\n"}
+,{"stream_name":"stdout","time":45.323411999,"data":"                    PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":48.006813865,"data":"                    NORMAL/\n"}
+,{"stream_name":"stdout","time":48.014191728,"data":"            __MACOSX/\n"}
+,{"stream_name":"stdout","time":48.021513661,"data":"                chest_xray/\n"}
+,{"stream_name":"stdout","time":48.029753792,"data":"                    val/\n"}
+,{"stream_name":"stdout","time":48.037447658,"data":"                        PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":48.044806947,"data":"                        NORMAL/\n"}
+,{"stream_name":"stdout","time":48.051820149,"data":"                    test/\n"}
+,{"stream_name":"stdout","time":49.521844705,"data":"                        PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":50.397538768,"data":"                        NORMAL/\n"}
+,{"stream_name":"stdout","time":50.407427783,"data":"                    train/\n"}
+,{"stream_name":"stdout","time":59.015927963,"data":"                        PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":62.011316022,"data":"                        NORMAL/\n"}
+,{"stream_name":"stdout","time":62.014571604,"data":"            val/\n"}
+,{"stream_name":"stdout","time":62.019277012,"data":"                PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":62.023879348,"data":"                NORMAL/\n"}
+,{"stream_name":"stdout","time":62.026713745,"data":"            test/\n"}
+,{"stream_name":"stdout","time":62.505882595,"data":"                PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":62.883571681,"data":"                NORMAL/\n"}
+,{"stream_name":"stdout","time":62.887137653,"data":"            train/\n"}
+,{"stream_name":"stdout","time":65.803861429,"data":"                PNEUMONIA/\n"}
+,{"stream_name":"stdout","time":66.89162369,"data":"                NORMAL/\n"}
+,{"stream_name":"stdout","time":73.917236739,"data":"Strategy A failed. Attempting Strategy B (KaggleHub)...\n"}
+,{"stream_name":"stdout","time":74.096725109,"data":"FAILED Strategy B: POST failed with: {\"errors\":[\"Permission \\u0027models.get\\u0027 was denied\"],\"error\":{\"code\":7},\"wasSuccessful\":false}\n"}
+,{"stream_name":"stdout","time":74.097650638,"data":"CRITICAL: Failed both strategies. Exiting.\n"}
+,{"stream_name":"stderr","time":78.368173373,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":78.368212016,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":78.586037507,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":78.586075027,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":79.206655758,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":79.20669832,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":79.243949821,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":79.99296486,"data":"[NbConvertApp] Writing 293807 bytes to __results__.html\n"}
+]

@@ -1,0 +1,17 @@
+[{"stream_name":"stderr","time":16.058818247,"data":"2026-01-14 15:04:10.395379: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n"}
+,{"stream_name":"stderr","time":16.259627158,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":16.259653541,"data":"E0000 00:00:1768403050.596261       7 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n"}
+,{"stream_name":"stderr","time":16.320161192,"data":"E0000 00:00:1768403050.656787       7 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n"}
+,{"stream_name":"stderr","time":17.122560848,"data":"AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n"}
+,{"stream_name":"stderr","time":17.408324521,"data":"AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n"}
+,{"stream_name":"stderr","time":19.717474643,"data":"AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n"}
+,{"stream_name":"stderr","time":24.21478249,"data":"AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n"}
+,{"stream_name":"stderr","time":27.455602453,"data":"AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n"}
+,{"stream_name":"stdout","time":36.945066061,"data":"[2026-01-14 15:04:31.281657] Starting MedGemma Kaggle Inference Job...\n"}
+,{"stream_name":"stdout","time":36.9451095,"data":"Loading model from: /kaggle/input/medgemma-4b-it\n"}
+,{"stream_name":"stdout","time":36.945122034,"data":"FAILED to load model: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/kaggle/input/medgemma-4b-it'. Use `repo_type` argument if needed.\n"}
+,{"stream_name":"stderr","time":42.176944648,"data":"/usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":42.176983603,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":42.219675163,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":42.975988104,"data":"[NbConvertApp] Writing 282597 bytes to __results__.html\n"}
+]

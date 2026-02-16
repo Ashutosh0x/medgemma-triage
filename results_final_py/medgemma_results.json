@@ -1,0 +1,12 @@
+{
+    "status": "success",
+    "timestamp": "2026-01-14T21:56:15.786621",
+    "model": "MedGemma-4B-IT",
+    "model_architecture": "Vision-Language Reasoning -> Deterministic Triage",
+    "clinical_description": "user\n\nDescribe the visible radiographic findings in this chest X-ray. Use anatomical terms and express uncertainty where appropriate.\nmodel\nThe chest X-ray shows",
+    "triage_assessment": {
+        "triage": "NON-URGENT",
+        "trigger_findings": [],
+        "logic": "Keyword detection in MedGemma output"
+    }
+}

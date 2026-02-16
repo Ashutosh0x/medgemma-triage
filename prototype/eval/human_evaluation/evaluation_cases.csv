@@ -1,0 +1,11 @@
+case_id,image_path,model_urgency,model_confidence,model_explanation,model_findings
+case_001,data/samples/cxr_001.png,Urgent,0.87,"Right lower lobe consolidation consistent with pneumonia","Consolidation in RLL;No pleural effusion;Heart size normal"
+case_002,data/samples/cxr_002.png,Non-Urgent,0.23,"Clear lung fields with no acute cardiopulmonary abnormality","Clear lungs;Normal heart size;No effusion"
+case_003,data/samples/cxr_003.png,Urgent,0.72,"Cardiomegaly with pulmonary vascular congestion","Enlarged cardiac silhouette;Vascular redistribution;Small bilateral effusions"
+case_004,data/samples/cxr_004.png,Non-Urgent,0.18,"No acute findings. Normal chest radiograph.","Normal lung fields;Normal mediastinum;No osseous abnormality"
+case_005,data/samples/cxr_005.png,Urgent,0.91,"Large right-sided pleural effusion with mediastinal shift","Large pleural effusion;Mediastinal shift to left;Partial atelectasis"
+case_006,data/samples/cxr_006.png,Non-Urgent,0.35,"Stable chronic changes. No acute abnormality.","Mild cardiomegaly (stable);Clear lungs;Old calcified granulomas"
+case_007,data/samples/cxr_007.png,Urgent,0.68,"Bilateral interstitial opacities concerning for edema","Bilateral interstitial markings;Kerley B lines;Mild cardiomegaly"
+case_008,data/samples/cxr_008.png,Non-Urgent,0.12,"Normal chest radiograph with no acute findings","Clear lungs;Normal heart;Normal mediastinum"
+case_009,data/samples/cxr_009.png,Urgent,0.84,"Left upper lobe mass concerning for malignancy","Spiculated mass LUL;No effusion;Recommend CT"
+case_010,data/samples/cxr_010.png,Non-Urgent,0.28,"Post-surgical changes. No acute cardiopulmonary process.","Sternal wires;Mild atelectasis;No effusion"

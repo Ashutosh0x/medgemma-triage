@@ -1,0 +1,22 @@
+[{"stream_name":"stderr","time":23.796382486,"data":"2026-01-14 15:21:26.908595: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n"}
+,{"stream_name":"stderr","time":24.127659953,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":24.127689928,"data":"E0000 00:00:1768404087.239764       7 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n"}
+,{"stream_name":"stderr","time":24.219285553,"data":"E0000 00:00:1768404087.331400       7 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n"}
+,{"stream_name":"stderr","time":25.194760972,"data":"W0000 00:00:1768404088.306989       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stderr","time":25.194789854,"data":"W0000 00:00:1768404088.307038       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stderr","time":25.194793345,"data":"W0000 00:00:1768404088.307041       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stderr","time":25.194796721,"data":"W0000 00:00:1768404088.307043       7 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"}
+,{"stream_name":"stdout","time":49.850645824,"data":"[2026-01-14 15:21:52.962720] Starting MedGemma Kaggle Inference Job...\n"}
+,{"stream_name":"stdout","time":49.923561084,"data":"Strategy A: Scanning /kaggle/input for config.json...\n"}
+,{"stream_name":"stdout","time":49.923702298,"data":"Strategy B: MedGemma not found in /kaggle/input. Downloading via kagglehub...\n"}
+,{"stream_name":"stdout","time":50.128091743,"data":"FAILED Strategy B: POST failed with: {\"errors\":[\"Permission \\u0027models.get\\u0027 was denied\"],\"error\":{\"code\":7},\"wasSuccessful\":false}\n"}
+,{"stream_name":"stdout","time":50.129208984,"data":"CRITICAL: Could not locate MedGemma weights. Listing all files in /kaggle/input for debug:\n"}
+,{"stream_name":"stderr","time":55.416276628,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":55.416325053,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":55.753833609,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":55.753860722,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":56.458209514,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":56.458242111,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":56.505370131,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":57.283606979,"data":"[NbConvertApp] Writing 287548 bytes to __results__.html\n"}
+]

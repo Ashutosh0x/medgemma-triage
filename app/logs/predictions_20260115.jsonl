@@ -1,0 +1,2 @@
+{"timestamp": "2026-01-15T04:15:58.799312", "request_id": "4678e6f6", "label": "Non-Urgent", "score": 0.5, "model_confidence": null, "uncertainty": 0.15, "verified": true, "abstained": false, "inference_time_ms": 76.81846618652344, "key_findings": ["[No abnormalities]"]}
+{"timestamp": "2026-01-15T04:16:18.748806", "request_id": "8aa3e333", "label": "Non-Urgent", "score": 0.5, "model_confidence": null, "uncertainty": 0.15, "verified": true, "abstained": false, "inference_time_ms": 60.80341339111328, "key_findings": ["[No abnormalities]"]}
