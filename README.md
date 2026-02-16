@@ -28,42 +28,29 @@ MedGemma CXR Triage automatically prioritizes chest X-rays by urgency, helping r
 
 Unlike traditional sequential pipelines, this system uses **5 specialized AI agents** that collaborate through structured communication:
 
-```
-+-----------------------------------------------------------------+
-|                    AGENTIC TRIAGE PIPELINE                      |
-+-----------------------------------------------------------------+
-|                                                                 |
-|  +--------------+                                               |
-|  | QUALITY      | <- Gate: reject unsuitable images              |
-|  | AGENT        |                                               |
-|  +------+-------+                                               |
-|         | [OK] suitable                                         |
-|         V                                                       |
-|  +--------------+    +--------------+                          |
-|  | TRIAGE       |    | FINDINGS     |  <- Run concurrently      |
-|  | AGENT        |    | AGENT        |                           |
-|  |              |    |              |                           |
-|  | Urgent /     |    | Structured   |                           |
-|  | Non-Urgent   |    | observations |                           |
-|  +------+-------+    +------+-------+                          |
-|         |                   |                                   |
-|         V                   V                                   |
-|  +--------------+    +--------------+                          |
-|  | COMPARISON   |    | SAFETY       | <- Multi-signal check     |
-|  | AGENT        |    | AGENT        |                           |
-|  |              |    |              |                           |
-|  | Longitudinal |    | FP prevent,  |                           |
-|  | change       |    | uncertainty, |                           |
-|  |              |    | abstention   |                           |
-|  +--------------+    +--------------+                          |
-|                             |                                   |
-|                             V                                   |
-|                      +--------------+                          |
-|                      | ORCHESTRATOR | -> Final Decision          |
-|                      |              |   + Full Provenance       |
-|                      +--------------+                          |
-|                                                                 |
-+-----------------------------------------------------------------+
+```mermaid
+graph TD
+    Input([Input CXR]) --> Quality[Quality Agent]
+    
+    Quality -- "Rejection (Blur/Noise)" --> Reject([Stop: Low Quality])
+    Quality -- "Pass" --> Triage[Triage Agent]
+    Quality -- "Pass" --> Findings[Findings Agent]
+    
+    Triage -- "Urgency Score" --> Safety[Safety Agent]
+    Findings -- "Clinical Observations" --> Safety
+    Findings -- "Context" --> Comparison[Comparison Agent]
+    
+    Comparison -- "Longitudinal Change" --> Safety
+    
+    Safety -- "Conflict/Uncertainty" --> Human([Escalate to Radiologist])
+    Safety -- "Verified Protocol" --> Orch[Orchestrator]
+    
+    Orch --> Final([Final Triage Decision])
+    
+    style Quality fill:#f9f,stroke:#333
+    style Triage fill:#bbf,stroke:#333
+    style Safety fill:#ff9,stroke:#f66,stroke-width:2px
+    style Final fill:#9f9,stroke:#333
 ```
 
 ### Agent Descriptions
