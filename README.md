@@ -6,6 +6,7 @@
 [![HAI-DEF](https://img.shields.io/badge/Ecosystem-HAI--DEF-green)](https://developers.google.com/health-ai)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-yellow)](https://python.org)
+<img width="1024" height="707" alt="image" src="https://github.com/user-attachments/assets/3ab8477c-c3dd-4a58-873b-38a86f39f1eb" />
 
 ---
 
@@ -229,5 +230,6 @@ This application is for **clinical decision support and research demonstration o
 - **NOT** an FDA-approved medical device
 - **NOT** a substitute for professional radiologist interpretation
 - **NOT** validated for clinical deployment
+
 
 All AI-generated outputs require verification by qualified healthcare professionals. The developers assume no liability for clinical decisions made using this system.
