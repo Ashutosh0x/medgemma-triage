@@ -34,6 +34,7 @@ The entire pipeline is available as a single-file entry point (`kaggle_main.py`)
 - **GitHub Repository**: [Ashutosh0x/medgemma-triage](https://github.com/Ashutosh0x/medgemma-triage)
 - **Kaggle Notebook**: [MedGemma High Fidelity Clinical Triage](https://www.kaggle.com/code/ashutosh0x/medgemma-triage-notebook)
 - **Kaggle Results Dataset**: [MedGemma Triage Results](https://www.kaggle.com/datasets/ashutosh0x/medgemma-triage-results)
+- **Kaggle Source Code Dataset**: [MedGemma Triage Source](https://www.kaggle.com/datasets/ashutosh0x/medgemma-triage-source)
 
 ---
 *Disclaimer: This tool is for clinical decision support ONLY and must be reviewed by a qualified radiologist.*
